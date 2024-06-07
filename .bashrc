@@ -92,6 +92,8 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+alias vim='nvim'
+
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -115,5 +117,17 @@ fi
 
 export BROWSER="firefox"
 
+# Go stuff
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+
+# init zoxide
+# for some reason zoxide can't befound on first launch in wsl
+# so we tell it where it is
+eval "$(/home/kmain/.local/bin/zoxide init bash)"
+# alias zoxide to cd
+alias cd='z'
