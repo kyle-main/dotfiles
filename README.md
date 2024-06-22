@@ -15,5 +15,6 @@ Configuration files for bash and vim
         - python-venv
 
 - Bash
+    Install zoxide: https://github.com/ajeetdsouza/zoxide?tab=readme-ov-file#installation
     Link repo files with stow, bash`stow -t ~/ bashrc`
 
