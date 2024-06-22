@@ -1,0 +1,5 @@
+window.decorations = "None"
+window.startup_mode = "Fullscreen"
+
+font.normal = { family = "JetBrainsMonoNL Nerd Font", style = "Regular" }
+font.size = 16
