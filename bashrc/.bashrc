@@ -115,5 +115,13 @@ fi
 
 export BROWSER="firefox"
 
-# Load Angular CLI autocompletion.
-source <(ng completion script)
+# Add values to PATH
+export PATH="$PATH:/opt/nvim-linux64/bin"
+export PATH="$PATH:/usr/local/go/bin"
+
+# fnm
+FNM_PATH="/home/kmain/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="$FNM_PATH:$PATH"
+  eval "`fnm env`"
+fi
