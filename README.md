@@ -16,5 +16,6 @@ Configuration files for bash and vim
 
 - Bash
     Install zoxide: https://github.com/ajeetdsouza/zoxide?tab=readme-ov-file#installation
+    Install rust: https://www.rust-lang.org/tools/install
     Link repo files with stow, bash`stow -t ~/ bashrc`
 
