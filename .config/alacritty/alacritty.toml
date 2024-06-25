@@ -2,6 +2,8 @@ window.decorations = "None"
 window.startup_mode = "Fullscreen"
 window.option_as_alt = "OnlyLeft"
 
+# shell.program = "/opt/homebrew/bin/tmux"
+
 mouse.hide_when_typing = true
 
 font.normal = { family = "JetBrainsMonoNL Nerd Font", style = "Regular" }
