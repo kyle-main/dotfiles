@@ -1,4 +1,4 @@
--- barbar
+-- barbar for tabs
 -- https://github.com/romgrk/barbar.nvim
 
 local map = vim.api.nvim_set_keymap
