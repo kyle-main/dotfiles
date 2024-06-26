@@ -20,7 +20,12 @@ return {
     -- …etc.
   },
   config = function()
-    require('barbar').setup {}
+    require('barbar').setup {
+      sidebar_filetypes = {
+        -- Use the default values: {event = 'BufWinLeave', text = nil}
+        NvimTree = { event = 'BufWinLeave', text = 'NvimTree' },
+      },
+    }
     -- Move to previous/next
     map('n', '<Tab>', '<Cmd>BufferPrevious<CR>', opts)
     map('n', '<S-Tab>', '<Cmd>BufferNext<CR>', opts)

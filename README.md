@@ -19,8 +19,10 @@ Configuration files for bash and vim
     Install ripgrep: https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#installation
 
     LSP requirements:
-        - npm: https://nodejs.org/en/download/package-manager
-        - python-venv
+
+    - npm: https://nodejs.org/en/download/package-manager
+
+    - python-venv
 - Tmux:
 
     Install tmux: https://github.com/tmux/tmux?tab=readme-ov-file#installation
