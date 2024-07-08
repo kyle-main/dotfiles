@@ -31,5 +31,8 @@ vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower win
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
 -- Set L and H to $ and ^.
-vim.keymap.set({'n', 'x', 'o'}, 'H', '^')
-vim.keymap.set({'n', 'x', 'o'}, 'L', '$')
+vim.keymap.set({ 'n', 'x', 'o' }, 'H', '^')
+vim.keymap.set({ 'n', 'x', 'o' }, 'L', '$')
+
+-- Set Ctrl-r to refresh/reload the current buffer
+vim.keymap.set('n', '<C-r>', '<Cmd>:edit!<CR>', { desc = 'Refresh buffer with :edit! command. ' })
