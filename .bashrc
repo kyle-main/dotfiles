@@ -115,6 +115,7 @@ export BROWSER="firefox"
 # Add values to PATH
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:$HOME/bin"
 export PATH="$PATH:$HOME/go/bin"
 
 # fnm
