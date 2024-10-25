@@ -5,7 +5,10 @@ return { -- Autoformat
     {
       '<leader>fm',
       function()
-        require('conform').format { async = true, lsp_fallback = true }
+        require('conform').format {
+          async = true,
+          lsp_fallback = true,
+        }
       end,
       mode = '',
       desc = '[F]or[m]at buffer',
@@ -29,6 +32,7 @@ return { -- Autoformat
       python = { 'isort', 'black' },
       go = { 'gofmt', 'goimports' },
       templ = { 'templ' },
+      rust = { 'rustfmt' },
       -- javascript = { "prettier" },
       --
       -- You can use a sub-list to tell conform to run *until* a formatter

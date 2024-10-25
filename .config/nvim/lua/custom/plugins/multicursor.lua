@@ -29,7 +29,8 @@ return {
     vim.keymap.set({ 'n', 'v' }, '<right>', mc.prevCursor)
 
     -- Delete the main cursor.
-    vim.keymap.set({ 'n', 'v' }, '<leader>x', mc.deleteCursor)
+    -- Need to re-map this to something that doesn't conflict with barbar tabs.
+    -- vim.keymap.set({ 'n', 'v' }, '<leader>x', mc.deleteCursor)
 
     -- Add and remove cursors with control + left click.
     vim.keymap.set('n', '<c-leftmouse>', mc.handleMouse)
@@ -51,6 +52,7 @@ return {
         mc.clearCursors()
       else
         -- Default <esc> handler.
+        vim.keymap.set('n', '<Esc>', '<cmd>noh<CR>')
       end
     end)
 
