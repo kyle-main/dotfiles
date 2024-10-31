@@ -1,3 +1,5 @@
 .config/zed
 .config/go
 .config/ttyper
+.config/op
+.config/raycast
