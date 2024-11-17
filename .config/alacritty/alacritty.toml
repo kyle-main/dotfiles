@@ -3,7 +3,7 @@ window.startup_mode = "Windowed"
 window.option_as_alt = "OnlyLeft"
 window.padding = { x = 5, y = 3 }
 
-# shell.program = "/opt/homebrew/bin/tmux"
+shell.program = "/opt/homebrew/bin/tmux"
 
 mouse.hide_when_typing = true
 
