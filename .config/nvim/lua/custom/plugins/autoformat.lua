@@ -40,6 +40,7 @@ return { -- Autoformat
       -- is found.
       javascript = { { 'prettierd', 'prettier' } },
       html = { 'prettier' },
+      yaml = { 'prettier' },
     },
   },
 }

@@ -37,7 +37,7 @@ vim.opt.updatetime = 250
 vim.opt.timeoutlen = 300
 
 -- Live load replacements
-vim.opt.inccommand = "split"
+vim.opt.inccommand = 'split'
 
 -- Configure how new splits should be opened
 vim.opt.splitright = true
@@ -62,4 +62,3 @@ vim.opt.scrolloff = 10
 
 -- optionally enable 24-bit colour
 vim.opt.termguicolors = true
-
