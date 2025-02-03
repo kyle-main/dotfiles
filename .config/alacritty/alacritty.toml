@@ -5,10 +5,8 @@ window.padding = { x = 5, y = 3 }
 
 shell.program = "/opt/homebrew/bin/tmux"
 
-mouse.hide_when_typing = true
-
 font.normal = { family = "JetBrainsMonoNL Nerd Font", style = "Regular" }
-font.size = 16
+font.size = 14
 
 import = [
     "~/.config/alacritty/themes/themes/gruvbox_material_hard_dark.toml"
