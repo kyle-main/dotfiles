@@ -1,3 +1,4 @@
+.DS_Store
 .config/zed
 .config/go
 .config/ttyper
@@ -5,3 +6,6 @@
 .config/raycast
 .config/JetBrains
 .config/pulse
+.config/neofetch
+.config/github-copilot
+.config/fontforge

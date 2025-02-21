@@ -5,7 +5,7 @@ window.padding = { x = 5, y = 3 }
 
 shell.program = "/opt/homebrew/bin/tmux"
 
-font.normal = { family = "JetBrainsMonoNL Nerd Font", style = "Regular" }
+font.normal = { family = "Berkeley Mono", style = "Regular" }
 font.size = 14
 
 import = [

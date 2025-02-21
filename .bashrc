@@ -2,6 +2,11 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+# Ghostty shell integration for Bash. This should be at the top of your bashrc!
+if [ -n "${GHOSTTY_RESOURCES_DIR}" ]; then
+    builtin source "${GHOSTTY_RESOURCES_DIR}/shell-integration/bash/ghostty.bash"
+fi
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -47,7 +52,7 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-#force_color_prompt=yes
+force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -61,7 +66,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[00m\]\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -111,12 +116,15 @@ fi
 . "$HOME/.cargo/env"
 
 export BROWSER="firefox"
+export GOPATH="$HOME/Public/go"
+export EDITOR="nvim"
+export XDG_CONFIG_HOME="$HOME/.config"
 
-# Add values to PATH
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:$HOME/bin"
-export PATH="$PATH:$HOME/go/bin"
+export PATH="$PATH:$HOME/Public/go/bin"
+export PATH="$PATH:/Applications/Alacritty.app/Contents/MacOS"
 
 # fnm
 FNM_PATH="/home/kmain/.local/share/fnm"
@@ -124,6 +132,9 @@ if [ -d "$FNM_PATH" ]; then
   export PATH="$FNM_PATH:$PATH"
   eval "`fnm env`"
 fi
+
+# Setup fzf key bindings and fuzzy completion
+eval "$(fzf --bash)"
 
 eval "$(zoxide init bash)"
 alias cd='z'

@@ -1,12 +1,12 @@
 -- NeoVim Config
 
-require('custom.globals')
+require 'custom.globals'
 
-require('custom.options' )
+require 'custom.options'
 
-require('custom.keymaps')
+require 'custom.keymaps'
 
-require('custom.autocommands')
+require 'custom.autocommands'
 
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim for more info
@@ -22,7 +22,7 @@ vim.opt.rtp:prepend(lazypath)
 vim.opt.rtp:prepend(lazypath)
 
 -- Set up lazy, and load my `lua/custom/plugins/` folder
-require("lazy").setup({ import = "custom/plugins" }, {
+require('lazy').setup({ import = 'custom/plugins' }, {
   change_detection = {
     notify = false,
   },

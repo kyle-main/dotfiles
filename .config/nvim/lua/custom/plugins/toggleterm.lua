@@ -4,14 +4,14 @@ return {
   version = '*',
   config = function()
     -- Toggle term in normal mode
-    -- vim.keymap.set('n', '<M-h>', ':ToggleTerm direction=horizontal<CR>')
-    -- vim.keymap.set('n', '<M-v>', ':ToggleTerm direction=vertical<CR>')
-    -- vim.keymap.set('n', '<M-i>', ':ToggleTerm direction=float<CR>')
+    vim.keymap.set('n', '<M-i>', ':ToggleTerm direction=float<CR>')
+    vim.keymap.set('n', '<M-v>', ':ToggleTerm direction=vertical<CR>')
+    vim.keymap.set('n', '<M-h>', ':ToggleTerm direction=horizontal<CR>')
 
     -- Allow toggle while inside terminal mode
-    -- vim.keymap.set('t', '<M-i>', '<C-\\><C-n><C-w>l')
-    -- vim.keymap.set('t', '<M-v>', '<C-\\><C-n><C-w>h')
-    -- vim.keymap.set('t', '<M-h>', '<C-\\><C-n><C-w>k')
+    vim.keymap.set('t', '<M-i>', '<C-\\><C-n><C-w>l')
+    vim.keymap.set('t', '<M-v>', '<C-\\><C-n><C-w>h')
+    vim.keymap.set('t', '<M-h>', '<C-\\><C-n><C-w>k')
 
     local opts = { buffer = 0 }
 

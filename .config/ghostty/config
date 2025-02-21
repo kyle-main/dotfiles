@@ -1,0 +1,21 @@
+title = "Terminal"
+
+shell-integration = bash
+
+working-directory = home
+
+window-padding-x = 5
+window-padding-y = 3
+window-padding-balance = true
+
+font-family = Berkeley Mono
+font-size = 16
+font-feature = -calt
+font-thicken = true
+font-thicken-strength = 16
+
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
+
+theme = gruvbox_material_hard_dark_custom

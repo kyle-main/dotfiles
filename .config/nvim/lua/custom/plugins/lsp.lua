@@ -162,6 +162,7 @@ return { -- LSP Configuration & Plugins
       gopls = {},
       templ = {},
       pyright = {},
+      ruff = {},
       tailwindcss = {
         settings = {
           tailwindCSS = {
