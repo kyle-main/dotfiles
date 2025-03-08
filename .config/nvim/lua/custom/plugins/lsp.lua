@@ -176,6 +176,10 @@ return { -- LSP Configuration & Plugins
       clangd = {},
       dockerls = {},
       ocamllsp = {},
+      ts_ls = {},
+      emmet_ls = {
+        filetypes = { 'javascript', 'javascriptreact' },
+      },
       -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
       --
       -- Some languages (like typescript) have entire language plugins that can be useful:
@@ -183,7 +187,6 @@ return { -- LSP Configuration & Plugins
       --
       -- But for many setups, the LSP (`tsserver`) will work just fine
       -- tsserver = {},
-      --
 
       lua_ls = {
         -- cmd = {...},
