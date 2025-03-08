@@ -7,6 +7,7 @@ working-directory = home
 window-padding-x = 5
 window-padding-y = 3
 window-padding-balance = true
+window-save-state = always
 
 font-family = Berkeley Mono
 font-size = 16
@@ -18,4 +19,10 @@ cursor-style = block
 cursor-style-blink = false
 shell-integration-features = no-cursor
 
+macos-titlebar-style = tabs
+macos-titlebar-proxy-icon = hidden
+macos-option-as-alt = true
+
 theme = gruvbox_material_hard_dark_custom
+
+keybind = super+r=reload_config
