@@ -36,7 +36,7 @@ return { -- Autoformat
       ocaml = { 'ocamlformat' },
       -- You can use a stop_after_first to tell conform to run *until* a formatter
       -- is found.
-      javascript = { 'prettierd', 'prettier', stop_after_first = true },
+      javascript = { 'biome', 'prettierd', 'prettier', stop_after_first = true },
       html = { 'prettier' },
       yaml = { 'prettier' },
     },
