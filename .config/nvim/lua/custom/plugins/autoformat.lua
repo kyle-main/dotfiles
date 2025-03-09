@@ -37,8 +37,8 @@ return { -- Autoformat
       -- You can use a stop_after_first to tell conform to run *until* a formatter
       -- is found.
       javascript = { 'biome', 'prettierd', 'prettier', stop_after_first = true },
-      html = { 'prettier' },
-      yaml = { 'prettier' },
+      html = { 'prettier', 'prettierd', stop_after_first = true },
+      yaml = { 'prettier', 'prettierd', stop_after_first = true },
     },
   },
 }
