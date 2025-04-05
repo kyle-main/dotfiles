@@ -126,6 +126,20 @@ export PATH="$PATH:$HOME/bin"
 export PATH="$PATH:$HOME/Public/go/bin"
 export PATH="$PATH:/Applications/Alacritty.app/Contents/MacOS"
 
+export PROXY="http://185.46.212.88:10302/"
+  
+export https_proxy=$PROXY
+export http_proxy=$PROXY
+export HTTP_PROXY=$PROXY
+export HTTPS_PROXY=$PROXY
+export ALL_PROXY=$PROXY
+export all_proxy=$PROXY
+# next two lines had to be modified to get nvm to work for me (Lea - 20th April 2023)
+# export NO_PROXY=localhost,127.0.0.1,.troweprice.io,.troweprice.net,.awstrp.net,*.local
+# export no_proxy=localhost,127.0.0.1,.troweprice.io,.troweprice.net,.awstrp.net,*.local 
+export NO_PROXY=localhost,artifactory.awstrp.net,.troweprice.io,vault.troweprice.com,127.0.0.1,.troweprice.io,.troweprice.net,.awstrp.net,*.local
+export no_proxy=$NO_PROXY 
+
 # fnm
 FNM_PATH="/home/kmain/.local/share/fnm"
 if [ -d "$FNM_PATH" ]; then

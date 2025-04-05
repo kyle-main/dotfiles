@@ -36,11 +36,10 @@ return { -- Autoformat
       ocaml = { 'ocamlformat' },
       -- You can use a stop_after_first to tell conform to run *until* a formatter
       -- is found.
-      javascript = { 'prettier', 'prettierd' },
-      javascriptreact = { 'prettier', 'prettierd' },
-      typescript = { 'prettier', 'prettierd' },
-      typescriptreact = { 'prettier', 'prettierd' },
-      json = { 'prettier' },
+      javascript = { 'pettier', 'prettierd', stop_after_first = true },
+      typescript = { 'prettier' },
+      typescriptreact = { 'prettier' },
+      javascriptreact = { 'prettier' },
       html = { 'prettier', 'prettierd', stop_after_first = true },
       yaml = { 'prettier', 'prettierd', stop_after_first = true },
     },
