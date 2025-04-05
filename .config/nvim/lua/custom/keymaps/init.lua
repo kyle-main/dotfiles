@@ -36,4 +36,4 @@ vim.keymap.set({ 'n', 'x', 'o' }, 'H', '^')
 vim.keymap.set({ 'n', 'x', 'o' }, 'L', '$')
 
 -- Set Ctrl-r to refresh/reload the current buffer
-vim.keymap.set('n', '<C-r>', '<Cmd>:edit!<CR>', { desc = 'Refresh buffer with :edit! command. ' })
+-- vim.keymap.set('n', '<C-r>', '<Cmd>:edit!<CR>', { desc = 'Refresh buffer with :edit! command. ' })

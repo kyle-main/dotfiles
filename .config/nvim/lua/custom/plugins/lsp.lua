@@ -167,7 +167,7 @@ return { -- LSP Configuration & Plugins
         settings = {
           tailwindCSS = {
             includeLanguages = {
-              templ = 'html',
+              templ = { 'html', 'typescriptreact' },
             },
           },
         },
@@ -178,7 +178,10 @@ return { -- LSP Configuration & Plugins
       ocamllsp = {},
       ts_ls = {},
       emmet_ls = {
-        filetypes = { 'javascript', 'javascriptreact' },
+        filetypes = { 'javascript', 'javascriptreact', 'typescript', 'typescriptreact' },
+      },
+      graphql = {
+        filetypes = { 'javascript', 'javascriptreact', 'typescript', 'typescriptreact' },
       },
       -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
       --
