@@ -163,6 +163,7 @@ return { -- LSP Configuration & Plugins
       templ = {},
       pyright = {},
       ruff = {},
+      black = {},
       tailwindcss = {
         settings = {
           tailwindCSS = {

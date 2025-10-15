@@ -42,6 +42,7 @@ return { -- Autoformat
       javascriptreact = { 'prettier' },
       html = { 'prettier', 'prettierd', stop_after_first = true },
       yaml = { 'prettier', 'prettierd', stop_after_first = true },
+      json = { 'prettier', 'prettierd', stop_after_first = true },
     },
   },
 }

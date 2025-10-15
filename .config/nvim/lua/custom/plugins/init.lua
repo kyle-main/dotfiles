@@ -23,4 +23,11 @@ return {
     dependencies = { 'nvim-lua/plenary.nvim' },
     opts = { signs = false },
   },
+
+  -- A high-performance color highlighter for Neovim
+  { 'norcalli/nvim-colorizer.lua', opts = {
+    'css',
+    'javascript',
+    'html'
+  } },
 }

@@ -10,4 +10,8 @@
 .config/github-copilot
 .config/fontforge
 .config/glab-cli/
+.config/gh-copilot/
+.config/gh/
+.config/git/
+.config/pip/
 wireshark
