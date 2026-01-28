@@ -30,4 +30,7 @@ return {
     'javascript',
     'html'
   } },
+
+  -- Better unicode charaterization
+  'tpope/vim-characterize'
 }

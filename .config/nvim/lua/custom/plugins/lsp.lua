@@ -176,7 +176,7 @@ return { -- LSP Configuration & Plugins
       rust_analyzer = {},
       clangd = {},
       dockerls = {},
-      -- ocamllsp = {},
+      ocamllsp = {},
       ts_ls = {},
       emmet_ls = {
         filetypes = { 'javascript', 'javascriptreact', 'typescript', 'typescriptreact' },
