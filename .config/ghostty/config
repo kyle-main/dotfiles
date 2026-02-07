@@ -5,7 +5,7 @@ shell-integration = bash
 working-directory = home
 
 window-padding-x = 5
-window-padding-y = 3
+window-padding-y = 0
 window-padding-balance = true
 window-save-state = always
 
