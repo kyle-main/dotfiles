@@ -137,7 +137,12 @@ if [ -d "$FNM_PATH" ]; then
 fi
 
 if [[ -z "$TMUX" ]] && [[ "$TERM_PROGRAM" == "ghostty" ]]; then
-  tmux new-session -A -s main
+  unattached=$(tmux ls -F "#{session_name}" -f "#{==:#{session_attached},0}" 2>/dev/null | head -1)
+  if [[ -n "$unattached" ]]; then
+    tmux attach -t "$unattached"
+  else
+    tmux new-session
+  fi
 fi
 
 # Setup fzf key bindings and fuzzy completion
