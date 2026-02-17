@@ -26,3 +26,4 @@ macos-option-as-alt = true
 theme = gruvbox_material_hard_dark_custom
 
 keybind = super+r=reload_config
+
