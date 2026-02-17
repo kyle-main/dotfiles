@@ -14,4 +14,5 @@
 .config/gh/
 .config/git/
 .config/pip/
+.config/colima/
 wireshark
