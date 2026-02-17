@@ -66,7 +66,10 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[00m\]\$ '
+    GREEN=$(tput setaf 2)
+    BLUE=$(tput setaf 4)
+    RESET=$(tput sgr0)
+    PS1='${debian_chroot:+($debian_chroot)}\[${GREEN}\]\u@\h\[${RESET}\]:\[${BLUE}\]\w\[${RESET}\]\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -145,6 +148,10 @@ FNM_PATH="/home/kmain/.local/share/fnm"
 if [ -d "$FNM_PATH" ]; then
   export PATH="$FNM_PATH:$PATH"
   eval "`fnm env`"
+fi
+
+if [[ -z "$TMUX" ]] && [[ "$TERM_PROGRAM" == "ghostty" ]]; then
+  tmux new-session -A -s main
 fi
 
 # Setup fzf key bindings and fuzzy completion

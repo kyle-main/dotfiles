@@ -15,4 +15,7 @@
 .config/git/
 .config/pip/
 .config/colima/
+.config/aerospace
+.config/nodemon.json
+.config/mnvim
 wireshark
